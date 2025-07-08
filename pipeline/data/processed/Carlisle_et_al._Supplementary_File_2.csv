@@ -1,0 +1,219 @@
+patient_number,sample_id,unique_id,sample_type,patient_age,sex,Patient.location,Immunostatus,organism..one.per.line.,pipeline,significance,reason.for.request,outcome_post_16S,sample_group,genus,impact_category,age_group,actionable,rationalisation,age_group_nhs
+nnZZHHQCQ,1,nnZZHHQCQ-1,WRIST BONE TISSUE,36,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Other,NA,Unclear,36-40,FALSE,FALSE,35-49
+rrKYPCXPP,1,rrKYPCXPP-1,TISSUE RIGHT FOOT,11,female,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,11-15,FALSE,FALSE,05-11
+nnZQKMWPX,1,nnZQKMWPX-1,TISSUE (UPPER ABDOMEN),33,male,outpatient clinic,competent,Mycobacterium lepromatosis,Amplicon Sorter,pathogen,expected fastidious organism,confirms treatment choice,Tissue,Mycobacterium,Rationalisation,31-35,TRUE,TRUE,26-34
+ddLKXQYKQZ,1,ddLKXQYKQZ-1,TISSUE (THORACIC),68,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,66-70,FALSE,FALSE,50-69
+ddLKXMXYYW,1,ddLKXMXYYW-1,TISSUE (T9/T10 BONE),69,male,ward,NA,NA,NA,NA,unable to grow,confirms treatment choice,Tissue,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+bbQPPHXW,1,bbQPPHXW-1,TISSUE (STERNAL),63,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnZQXYKQW,1,nnZQXYKQW-1,TISSUE (RIGHT LEG),61,female,ward,immunosuppressed,NA,NA,NA,unable to grow,no change,Tissue,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnWYPXKHC,1,nnWYPXKHC-1,TISSUE (RIGHT KNEE),75,female,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,71-75,FALSE,FALSE,70-79
+nnWYPXKHC,2,nnWYPXKHC-2,TISSUE (RIGHT KNEE),75,female,NA,NA,NA,NA,NA,NA,NA,Joint Fluid,NA,Unclear,71-75,FALSE,FALSE,70-79
+nnYZMMYXC,1,nnYZMMYXC-1,TISSUE (RIGHT ARM),33,male,outpatient clinic,immunosuppressed,Mycobacterium abscessus-chelonae complex,Amplicon Sorter,pathogen,TAT,start Abx therapy,Tissue,Mycobacterium,Escalation,31-35,TRUE,FALSE,26-34
+nnZZQZZCC,1,nnZZQZZCC-1,TISSUE (RIGHT ANKLE),61,male,ward,competent,NA,NA,NA,unable to grow,no change,Joint Fluid,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnYYXYCMK,1,nnYYXYCMK-1,TISSUE (RENAL),69,female,ward,competent,Corynebacterium sp.,Kraken,contaminant,unable to grow,no change,Tissue,Corynebacterium,Unclear,66-70,FALSE,FALSE,50-69
+nnYYXYCMK,2,nnYYXYCMK-2,TISSUE (RENAL),69,female,ward,competent,Corynebacterium sp.,Kraken,contaminant,NA,NA,Tissue,Corynebacterium,Unclear,66-70,FALSE,FALSE,50-69
+ddLLMHQWC,1,ddLLMHQWC-1,TISSUE (PUS EXTRADURAL FLUID),69,male,ward,competent,NA,unknown,NA,unable to grow,stop Abx,Pus/Abscess,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+bbXKWXXH,1,bbXKWXXH-1,TISSUE (PERGRAFT CLOT),69,male,ward,competent,NA,NA,NA,confirm non-infectious cause,stop Abx,Tissue,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+nnZQZXPCZ,1,nnZQZXPCZ-1,TISSUE (NASAL),65,male,ITU,competent,Unable to amplify,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnZQXYKQW,2,nnZQXYKQW-2,TISSUE (LOWER RIGHT LEG),61,female,outpatient clinic,immunosuppressed,Cutibacterium acnes,Amplicon Sorter,pathogen,unable to grow,start Abx therapy,Tissue,Cutibacterium,Escalation,61-65,TRUE,FALSE,50-69
+nnZQCZPXW,1,nnZQCZPXW-1,TISSUE (LEFT TIBIA BONE BIOPSY),31,female,outpatient clinic,immunosuppressed,NA,NA,NA,unable to grow,confirms treatment choice,Tissue,NA,Rationalisation,31-35,TRUE,TRUE,26-34
+nnYQHMXHW,1,nnYQHMXHW-1,TISSUE (LEFT KNEE),51,male,ward,competent,NA,NA,NA,expected fastidious organism,no change,Joint Fluid,NA,Unclear,51-55,FALSE,FALSE,50-69
+ddLKXPPWWM,1,ddLKXPPWWM-1,TISSUE (HEAD),45,male,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,Tissue,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+ddLLMHQWC,3,ddLLMHQWC-3,TISSUE (EXTRADURAL TISSUE),69,male,ward,competent,Unable to sequence,unknown,NA,unable to grow,NA,Tissue,NA,Unclear,66-70,FALSE,FALSE,50-69
+ddLKXPQQPH,1,ddLKXPQQPH-1,TISSUE (EPIDURAL),38,male,ITU,NA,Cutibacterium sp.,Amplicon Sorter,contaminant,sample taken while on Abx,confirms treatment choice,Tissue,Cutibacterium,Rationalisation,36-40,TRUE,TRUE,35-49
+ddLKXMWHWX,1,ddLKXMWHWX-1,TISSUE (EPIDURAL),64,male,ward,NA,NA,NA,NA,sample taken while on Abx,confirms treatment choice,Tissue,NA,Rationalisation,61-65,TRUE,TRUE,50-69
+ddLLWWMPC,1,ddLLWWMPC-1,TISSUE (EPIDURAL),69,female,ward,NA,NA,NA,NA,sample taken while on Abx,confirms treatment choice,Tissue,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+ddLLMHQWC,2,ddLLMHQWC-2,TISSUE (DEEP SUTURE EXTRACRANIAL),69,male,ward,competent,NA,unknown,NA,unable to grow,NA,Tissue,NA,Unclear,66-70,FALSE,FALSE,50-69
+nnHWPXYWZ,3,nnHWPXYWZ-3,TISSUE (DEEP RIGHT KNEE),64,female,ward,NA,Unable to amplify,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnZZWKZHW,1,nnZZWKZHW-1,TISSUE (BREAST),66,female,outpatient clinic,competent,NA,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,66-70,FALSE,FALSE,50-69
+nnYQXXCYK,2,nnYQXXCYK-2,TISSUE (BONE MARROW),45,female,outpatient clinic,competent,NA,NA,NA,confirm non-infectious cause,confirms non-infectious cause,Tissue,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+bbXKMWZZ,1,bbXKMWZZ-1,TISSUE (BICUSPID VALVE),35,male,ITU,competent,NA,NA,NA,unable to grow,NA,Tissue,NA,Unclear,31-35,FALSE,FALSE,35-49
+bbXXYHCC,1,bbXXYHCC-1,TISSUE (AORTIC),29,male,ITU,competent,NA,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,25-30,FALSE,FALSE,26-34
+bbXXZHWQ,1,bbXXZHWQ-1,TISSUE (AORTIC VALVE),51,male,ward,immunosuppressed,NA,NA,NA,sample taken while on Abx,no change,Tissue,NA,Unclear,51-55,FALSE,FALSE,50-69
+bbXWCYXP,1,bbXWCYXP-1,TISSUE (AORTIC VALVE),29,female,ward,NA,Staphylococcus sp.,Amplicon Sorter,pathogen,sample taken while on Abx,confirms treatment choice,Tissue,Staphylococcus,Rationalisation,25-30,TRUE,TRUE,26-34
+bbMMYXXX,1,bbMMYXXX-1,TISSUE (AORTIC VALVE),61,male,ward,competent,NA,NA,NA,unable to grow,NA,Tissue,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnZCCZKQH,2,nnZCCZKQH-2,TISSUE (AORTIC GRAFT),62,male,NA,NA,NA,NA,NA,NA,change of Abx therapy,Tissue,NA,Escalation,61-65,TRUE,FALSE,50-69
+nnWMQXQWW,1,nnWMQXQWW-1,TISSUE (AORTIC GRAFT),72,female,ward,competent,Propionibacterium acnes,Kraken,contaminant,NA,NA,Tissue,Propionibacterium,Unclear,71-75,FALSE,FALSE,70-79
+nnWMQXQWW,2,nnWMQXQWW-2,TISSUE (AORTIC GRAFT),72,female,ward,competent,Propionibacterium acnes,Kraken,contaminant,NA,NA,Tissue,Propionibacterium,Unclear,71-75,FALSE,FALSE,70-79
+bbXWYXYH,1,bbXWYXYH-1,TISSUE (AORTIC ABSCESS),41,male,ward,competent,Streptococcus oralis,Amplicon Sorter,pathogen,other,confirms treatment choice,Pus/Abscess,Streptococcus,Rationalisation,41-45,TRUE,TRUE,35-49
+bbXXQZZZ,1,bbXXQZZZ-1,TISSUE (ANEURYSM WALL),32,male,ITU,competent,NA,NA,NA,sample taken while on Abx,stop Abx,Tissue,NA,Rationalisation,31-35,TRUE,TRUE,26-34
+nnZKQPKMZ,1,nnZKQPKMZ-1,TISSUE (ABDOMINAL),73,male,ward,competent,Haemophilus parainfluenzae,Kraken,contaminant,NA,NA,Tissue,Haemophilus,Unclear,71-75,FALSE,FALSE,70-79
+bbMCQXCZ,3,bbMCQXCZ-3,TISSUE  (AORTIC VALVE),58,male,ITU,competent,Streptococcus dysgalactiae,Amplicon Sorter,pathogen,expected fastidious organism,change of Abx therapy,Tissue,Streptococcus,Escalation,56-60,TRUE,FALSE,50-69
+bbMCQXCZ,1,bbMCQXCZ-1,TISSUE  (AORTIC VALVE),58,male,ITU,competent,NA,NA,NA,expected fastidious organism,NA,Tissue,NA,Unclear,56-60,FALSE,FALSE,50-69
+bbMCQXCZ,2,bbMCQXCZ-2,TISSUE  (AORTIC VALVE),58,male,ITU,competent,NA,NA,NA,expected fastidious organism,NA,Tissue,NA,Unclear,56-60,FALSE,FALSE,50-69
+nnYQXXCYK,1,nnYQXXCYK-1,TISSUE,45,female,outpatient clinic,competent,NA,NA,NA,confirm non-infectious cause,confirms non-infectious cause,Tissue,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+bbXWXYPY,1,bbXWXYPY-1,TISSUE,63,male,ward,competent,Parvimonas micra,Amplicon Sorter,pathogen,other,confirms treatment choice,Tissue,Parvimonas,Rationalisation,61-65,TRUE,TRUE,50-69
+nnYQHMXHW,2,nnYQHMXHW-2,TISSUE (LEFT KNEE),51,male,ward,competent,NA,NA,NA,expected fastidious organism,no change,Joint Fluid,NA,Unclear,51-55,FALSE,FALSE,50-69
+rrXCZMCXK,1,rrXCZMCXK-1,SYNOVIAL TISSUE,2,male,ward,competent,Cutibacterium sp.,Amplicon Sorter,NA,NA,NA,Joint Fluid,Cutibacterium,Unclear,00-04,FALSE,FALSE,00-04
+rrKPKZKPC,1,rrKPKZKPC-1,SYNOVIAL FLUID,5,male,ward,competent,Kaistobacter sp.,Kraken,contaminant,unable to grow,no change,Joint Fluid,Kaistobacter,Unclear,05-10,FALSE,FALSE,05-11
+rrXCZQPCX,1,rrXCZQPCX-1,SYNOVIAL FLUID,0,male,ward,competent,Unable to identify organism,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,00-04,FALSE,FALSE,00-04
+nnYPPXPHC,1,nnYPPXPHC-1,SWAB (HICKMAN),39,female,ward,competent,Enterococcus faecium,Kraken,NA,NA,NA,Swab,Enterococcus,Unclear,36-40,FALSE,FALSE,35-49
+nnZQZYHWY,1,nnZQZYHWY-1,SWAB (CONJUNCTIVAL),18,male,outpatient clinic,competent,Neisseria gonorrhoeae,Amplicon Sorter,pathogen,TAT,confirms treatment choice,Swab,Neisseria,Rationalisation,15-20,TRUE,TRUE,18-25
+rrXCZYQXC,2,rrXCZYQXC-2,RT HAND WOUND,0,female,ward,competent,NA,NA,NA,confirm non-infectious cause,stop Abx,Other,NA,Rationalisation,00-04,TRUE,TRUE,00-04
+nnHCKWQPC,1,nnHCKWQPC-1,PUS (LIVER),39,male,ward,competent,Enterobactericeae,Kraken,pathogen,sample taken while on Abx,confirms treatment choice,Pus/Abscess,Enterobactericeae,Rationalisation,36-40,TRUE,TRUE,35-49
+nnYCXCPPH,1,nnYCXCPPH-1,PUS (LIVER),73,male,ward,competent,Proteus mirabilis,Amplicon Sorter,pathogen,unable to grow,no change,Pus/Abscess,Proteus,Unclear,71-75,FALSE,FALSE,70-79
+nnWQHZKMC,1,nnWQHZKMC-1,PUS (LIP),62,female,outpatient clinic,competent,Fusobacterium sp.,Amplicon Sorter,pathogen,NA,NA,Pus/Abscess,Fusobacterium,Unclear,61-65,FALSE,FALSE,50-69
+nnHZQZQYW,1,nnHZQZQYW-1,PUS (LEG),61,male,ward,competent,Streptococcus pyogenes ,Amplicon Sorter,pathogen,sample taken while on Abx,confirms treatment choice,Pus/Abscess,Streptococcus,Rationalisation,61-65,TRUE,TRUE,50-69
+ddLKXQYYCH,1,ddLKXQYYCH-1,PUS (INTRACRANIAL),71,male,ward,competent,Cutibacterium acnes,Kraken,pathogen,other,change of Abx therapy,Pus/Abscess,Cutibacterium,Escalation,71-75,TRUE,FALSE,70-79
+ddLKXPMPPZ,1,ddLKXPMPPZ-1,PUS (INTRACRANIAL),49,male,ward,competent,Aggregatibacter sp.,Amplicon Sorter,NA,NA,NA,Pus/Abscess,Aggregatibacter,Unclear,46-50,FALSE,FALSE,35-49
+ddLKXMXZPP,1,ddLKXMXZPP-1,PUS (FRONTAL LOBE),16,female,ward,NA,Cutibacterium sp.,Amplicon Sorter,contaminant,unable to grow,confirms treatment choice,Pus/Abscess,Cutibacterium,Rationalisation,15-20,TRUE,TRUE,12-17
+nnHHYWZHQ,1,nnHHYWZHQ-1,PUS (FEMORAL),29,male,outpatient clinic,competent,Brevundimonas mongoliensis,Amplicon Sorter,NA,unable to grow,change of Abx therapy,Pus/Abscess,Brevundimonas,Escalation,25-30,TRUE,FALSE,26-34
+ddLKXMXCWW,1,ddLKXMXCWW-1,PUS (CEREBRAL ABSCESS),32,male,ward,NA,Cutibacterium acnes,Amplicon Sorter,NA,NA,NA,Pus/Abscess,Cutibacterium,Unclear,31-35,FALSE,FALSE,26-34
+ddLCWQYXWM,1,ddLCWQYXWM-1,PUS (BRAIN),66,female,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,Pus/Abscess,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+ddLKXQWWCY,1,ddLKXQWWCY-1,PUS (BRAIN),72,male,ward,competent,NA,NA,NA,unable to grow,no change,Pus/Abscess,NA,Unclear,71-75,FALSE,FALSE,70-79
+ddLKXPYWXZ,1,ddLKXPYWXZ-1,PUS (BRAIN ABSCESS),70,female,ward,competent,Campylobacter ureolyticus,Amplicon Sorter,pathogen,unable to grow,confirms treatment choice,Pus/Abscess,Campylobacter,Rationalisation,66-70,TRUE,TRUE,70-79
+ddLKXPYWXZ,2,ddLKXPYWXZ-2,PUS (BRAIN ABSCESS),70,female,ward,competent,NA,NA,NA,other,NA,Pus/Abscess,NA,Unclear,66-70,FALSE,FALSE,70-79
+nnYYHYMWQ,1,nnYYHYMWQ-1,PUS (AORTIC),76,male,ward,competent,Campylobacter concisus,Amplicon Sorter,contaminant,sample taken while on Abx,change of Abx therapy,Pus/Abscess,Campylobacter,Escalation,76-90,TRUE,FALSE,70-79
+rrKMKKCZW,1,rrKMKKCZW-1,PLEURAL FLIUD,3,male,ITU,competent,NA,NA,NA,sample taken while on Abx,no change,Other,NA,Unclear,00-04,FALSE,FALSE,00-04
+ddLKXMZPP,1,ddLKXMZPP-1,NASAL WASHOUT,16,female,ward,NA,Streptococcus sp.,Amplicon Sorter,pathogen,sample taken while on Abx,confirms treatment choice,Swab,Streptococcus,Rationalisation,15-20,TRUE,TRUE,12-17
+nnZZQQQHQ,1,nnZZQQQHQ-1,NA,69,female,ward,competent,Fusobacterium vincentii,Amplicon Sorter,pathogen,unable to grow,confirms treatment choice,Unknown,Fusobacterium,Rationalisation,66-70,TRUE,TRUE,50-69
+nnHXXWZZP,1,nnHXXWZZP-1,NA,64,male,ward,competent,NA,NA,NA,unable to grow,no change,Unknown,NA,Unclear,61-65,FALSE,FALSE,50-69
+ssCXXKKMHZ/nnHWHXZMC,1,ssCXXKKMHZ/nnHWHXZMC-1,LINE TIP,24,female,ward,immunosuppressed,NA,NA,NA,unable to grow,confirms non-infectious cause,Line-related,NA,Rationalisation,21-25,TRUE,TRUE,18-25
+rrXCZYQXC,1,rrXCZYQXC-1,LEFT WOUND FLUID,0,female,ward,competent,NA,NA,NA,confirm non-infectious cause,stop Abx,Fluid (Other),NA,Rationalisation,00-04,TRUE,TRUE,00-04
+rrXCXYZKH,1,rrXCXYZKH-1,JOINT ASPIRATE,1,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,00-04,FALSE,FALSE,00-04
+rrXCYYZCK,1,rrXCYYZCK-1,JOINT ASPIRATE,1,male,ward,competent,NA,NA,NA,expected fastidious organism,no change,Joint Fluid,NA,Unclear,00-04,FALSE,FALSE,00-04
+rrKXQCQPK,1,rrKXQCQPK-1,HEART CLOT,15,male,ward,immunosuppressed,NA,NA,NA,confirm non-infectious cause,confirms non-infectious cause,Other,NA,Rationalisation,11-15,TRUE,TRUE,12-17
+nnYMZKYYM,1,nnYMZKYYM-1,FLUID (WRIST),83,male,ward,competent,NA,NA,NA,other,stop Abx,Fluid (Other),NA,Rationalisation,81-85,TRUE,TRUE,80-89
+ddLCWXPWKK,1,ddLCWXPWKK-1,FLUID (WOUND DRAIN),43,male,ward,NA,NA,NA,NA,unable to grow,confirms treatment choice,Fluid (Other),NA,Rationalisation,41-45,TRUE,TRUE,35-49
+nnHHCKMYP,1,nnHHCKMYP-1,FLUID (VITREOUS),69,male,outpatient clinic,competent,NA,NA,NA,unable to grow,confirms treatment choice,Fluid (Other),NA,Rationalisation,66-70,TRUE,TRUE,50-69
+nnHKYKWPK,1,nnHKYKWPK-1,FLUID (VITREOUS),62,male,outpatient clinic,competent,NA,NA,NA,TAT,stop Abx,Fluid (Other),NA,Rationalisation,61-65,TRUE,TRUE,50-69
+nnZCXHCYK,1,nnZCXHCYK-1,FLUID (VITREOUS),43,female,ward,immunosuppressed,NA,NA,NA,sample taken while on Abx,change of Abx therapy,Fluid (Other),NA,Escalation,41-45,TRUE,FALSE,35-49
+nnZZQQYXH,1,nnZZQQYXH-1,FLUID (VITREOUS),75,female,outpatient clinic,competent,NA,NA,NA,sample taken while on Abx,NA,Fluid (Other),NA,Unclear,71-75,FALSE,FALSE,70-79
+nnZZWYQYH,1,nnZZWYQYH-1,FLUID (VITREOUS),48,female,ward,competent,NA,NA,NA,TAT,stop Abx,Fluid (Other),NA,Rationalisation,46-50,TRUE,TRUE,35-49
+nnWWKPXMH,1,nnWWKPXMH-1,FLUID (VITREOUS),78,male,outpatient clinic,competent,Propionibacterium acnes,Kraken,contaminant,NA,NA,Fluid (Other),Propionibacterium,Unclear,76-90,FALSE,FALSE,70-79
+nnHZXKPHZ,2,nnHZXKPHZ-2,FLUID (VITREOUS),61,female,ward,competent,Staphylococcus epidermidis,Amplicon Sorter,contaminant,other,no change,Fluid (Other),Staphylococcus,Unclear,61-65,FALSE,FALSE,50-69
+nnHWQYXCZ,1,nnHWQYXCZ-1,FLUID (VITREOUS),82,female,NA,competent,Streptococcus dysgalactiae,Amplicon Sorter,pathogen,TAT,change of Abx therapy,Fluid (Other),Streptococcus,Escalation,81-85,TRUE,FALSE,80-89
+nnHWQYXCZ,3,nnHWQYXCZ-3,FLUID (VITREOUS),82,female,NA,NA,Streptococcus dysgalactiae,Amplicon Sorter,pathogen,NA,NA,Fluid (Other),Streptococcus,Unclear,81-85,FALSE,FALSE,80-89
+nnHHCKMYP,2,nnHHCKMYP-2,FLUID (VITREOUS),70,male,outpatient clinic,competent,Unable to amplify,NA,NA,sample taken while on Abx,confirms treatment choice,Fluid (Other),NA,Rationalisation,66-70,TRUE,TRUE,70-79
+nnZQZXKQH,1,nnZQZXKQH-1,FLUID (VITREOUS),31,male,outpatient clinic,competent,Unable to amplify,NA,NA,NA,no change,Fluid (Other),NA,Unclear,31-35,FALSE,FALSE,26-34
+nnZQZZPYM,1,nnZQZZPYM-1,FLUID (VITREOUS),26,male,outpatient clinic,competent,Unable to amplify,NA,NA,NA,confirms treatment choice,Fluid (Other),NA,Rationalisation,25-30,TRUE,TRUE,26-34
+nnHCQWKKM,1,nnHCQWKKM-1,FLUID (VITREOUS),33,female,outpatient clinic,immunosuppressed,NA,NA,NA,other,confirms treatment choice,Fluid (Other),NA,Rationalisation,31-35,TRUE,TRUE,26-34
+nnHCZZKXW,1,nnHCZZKXW-1,FLUID (VITREOUS),82,male,outpatient clinic,competent,NA,NA,NA,other,no change,Fluid (Other),NA,Unclear,81-85,FALSE,FALSE,80-89
+nnYQCPHHW,1,nnYQCPHHW-1,FLUID (VITREOUS),59,female,ward,competent,NA,NA,NA,other,no change,Fluid (Other),NA,Unclear,56-60,FALSE,FALSE,50-69
+nnZQWZKCX,1,nnZQWZKCX-1,FLUID (VITREOUS),76,male,NA,NA,NA,NA,NA,unable to grow,stop Abx + start alternative treatment,Fluid (Other),NA,Rationalisation,76-90,TRUE,TRUE,70-79
+nnHYPYPZY,1,nnHYPYPZY-1,FLUID (VITREOUS WASH),68,male,outpatient clinic,competent,Unable to amplify,NA,NA,NA,no change,Fluid (Other),NA,Unclear,66-70,FALSE,FALSE,50-69
+nnZQWWPYX,1,nnZQWWPYX-1,FLUID (SYNOVIAL KNEE FLUID),29,male,ward,competent,NA,NA,NA,unable to grow,no change,Joint Fluid,NA,Unclear,25-30,FALSE,FALSE,26-34
+ddLKXPCWZP,1,ddLKXPCWZP-1,FLUID (SPINE DRAIN),31,female,ward,competent,NA,NA,NA,sample taken while on Abx,confirms treatment choice,Fluid (Other),NA,Rationalisation,31-35,TRUE,TRUE,26-34
+nnZQHMMCZ,1,nnZQHMMCZ-1,FLUID (PSOAS PUS),72,male,ward,competent,Unable to amplify,NA,NA,other,confirms treatment choice,Pus/Abscess,NA,Rationalisation,71-75,TRUE,TRUE,70-79
+bbXXXQQM,1,bbXXXQQM-1,FLUID (PLEURAL),73,male,ITU,competent,NA,NA,NA,unable to grow,no change,Fluid (Other),NA,Unclear,71-75,FALSE,FALSE,70-79
+nnHWZHKMY,1,nnHWZHKMY-1,FLUID (PLEURAL),64,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Fluid (Other),NA,Unclear,61-65,FALSE,FALSE,50-69
+bbXWWPZW,1,bbXWWPZW-1,FLUID (PLEURAL),46,female,ward,competent,NA,NA,NA,other,confirms treatment choice,Fluid (Other),NA,Rationalisation,46-50,TRUE,TRUE,35-49
+ddLKXPPWWM,2,ddLKXPPWWM-2,FLUID (PLEURAL),45,male,ward,NA,NA,NA,NA,unable to grow,confirms treatment choice,Fluid (Other),NA,Rationalisation,41-45,TRUE,TRUE,35-49
+nnHKQHHXH,1,nnHKQHHXH-1,FLUID (PLEURAL),63,female,ward,competent,NA,NA,NA,sample taken while on Abx,change of Abx therapy,Fluid (Other),NA,Escalation,61-65,TRUE,FALSE,50-69
+bbXXMMQX,1,bbXXMMQX-1,FLUID (PLEURAL),67,female,ward,competent,NA,NA,NA,other,change of Abx therapy,Fluid (Other),NA,Escalation,66-70,TRUE,FALSE,50-69
+nnHCWYPYP,1,nnHCWYPYP-1,FLUID (PLEURAL EFFUSION),81,female,ward,competent,NA,NA,NA,unable to grow,no change,Joint Fluid,NA,Unclear,81-85,FALSE,FALSE,80-89
+nnHXQQWKZ,1,nnHXQQWKZ-1,FLUID (PLEURAL EFFUSION),76,male,ward,NA,NA,NA,NA,unable to grow,change of Abx therapy,Joint Fluid,NA,Escalation,76-90,TRUE,FALSE,70-79
+nnWXYCMQW,1,nnWXYCMQW-1,FLUID (PLEURAL EFFUSION),85,male,ward,competent,NA,NA,NA,confirm non-infectious cause,confirms non-infectious cause,Joint Fluid,NA,Rationalisation,81-85,TRUE,TRUE,80-89
+nnYWKHYXX,1,nnYWKHYXX-1,FLUID (PLEURAL EFFUSION),68,male,ward,competent,NA,NA,NA,sample taken while on Abx,confirms treatment choice,Joint Fluid,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+nnHCHMYXH,1,nnHCHMYXH-1,FLUID (PERICARDIAL),44,male,ward,immunosuppressed,NA,NA,NA,sample taken while on Abx,confirms non-infectious cause,Fluid (Other),NA,Rationalisation,41-45,TRUE,TRUE,35-49
+nnZQWZWQY,1,nnZQWZWQY-1,FLUID (LIVER ABSCESS),60,male,ward,competent,Fusobacterium sp.,Amplicon Sorter,pathogen,sample taken while on Abx,change of Abx therapy,Pus/Abscess,Fusobacterium,Escalation,56-60,TRUE,FALSE,50-69
+nnZYQWPHY,1,nnZYQWPHY-1,FLUID (LIVER ABSCESS),63,male,ITU,competent,Fusobacterium sp.,Kraken,NA,NA,NA,Pus/Abscess,Fusobacterium,Unclear,61-65,FALSE,FALSE,50-69
+nnWXMHMPQ,1,nnWXMHMPQ-1,FLUID (LEFT KNEE NEAT),85,male,ward,competent,NA,NA,NA,sample taken while on Abx,stop Abx,Joint Fluid,NA,Rationalisation,81-85,TRUE,TRUE,80-89
+nnWXMHMPQ,2,nnWXMHMPQ-2,FLUID (LEFT KNEE DEPOSIT),85,male,NA,NA,NA,NA,NA,NA,NA,Joint Fluid,NA,Unclear,81-85,FALSE,FALSE,80-89
+nnWZQKWWZ,1,nnWZQKWWZ-1,FLUID (LEFT HIP),58,male,ward,competent,NA,NA,NA,unable to grow,no change,Joint Fluid,NA,Unclear,56-60,FALSE,FALSE,50-69
+nnZWHWZPC,1,nnZWHWZPC-1,FLUID (LEFT HIP),83,male,ward,competent,NA,NA,NA,unable to grow,no change,Joint Fluid,NA,Unclear,81-85,FALSE,FALSE,80-89
+nnHCMCHXM,1,nnHCMCHXM-1,FLUID (KNEE),82,female,ward,competent,Brevundimonas sp.,Amplicon Sorter,NA,unable to grow,confirms treatment choice,Joint Fluid,Brevundimonas,Rationalisation,81-85,TRUE,TRUE,80-89
+nnZQKPKHY,1,nnZQKPKHY-1,FLUID (KNEE),55,female,ward,competent,Corynebacterium accolens,Amplicon Sorter,contaminant,sample taken while on Abx,no change,Joint Fluid,Corynebacterium,Unclear,51-55,FALSE,FALSE,50-69
+nnHCCYHKQ,1,nnHCCYHKQ-1,FLUID (KNEE),22,female,ward,competent,NA,NA,NA,sample taken while on Abx,stop Abx,Joint Fluid,NA,Rationalisation,21-25,TRUE,TRUE,18-25
+nnHHQCCWC,1,nnHHQCCWC-1,FLUID (KNEE),32,female,ward,competent,NA,NA,NA,unable to grow,NA,Joint Fluid,NA,Unclear,31-35,FALSE,FALSE,26-34
+nnHWPXYWZ,1,nnHWPXYWZ-1,FLUID (KNEE),64,female,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnHWPXYWZ,2,nnHWPXYWZ-2,FLUID (KNEE),64,female,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnYCZQHMK,1,nnYCZQHMK-1,FLUID (KNEE),67,male,ward,NA,NA,NA,NA,unable to grow,stop Abx,Joint Fluid,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+nnZWYPCQY,1,nnZWYPCQY-1,FLUID (KNEE),64,female,ward,competent,NA,NA,NA,expected fastidious organism,no change,Joint Fluid,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnHHXMCWX,1,nnHHXMCWX-1,FLUID (KNEE),23,female,ward,immunosuppressed,Unable to amplify,NA,NA,unable to grow,no change,Joint Fluid,NA,Unclear,21-25,FALSE,FALSE,18-25
+nnHHZXXKK,1,nnHHZXXKK-1,FLUID (KNEE),28,male,ward,NA,Unable to amplify,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,25-30,FALSE,FALSE,26-34
+nnHWHPZZH,1,nnHWHPZZH-1,FLUID (KNEE),21,female,ward,immunosuppressed,Unable to amplify,NA,NA,unable to grow,stop Abx,Joint Fluid,NA,Rationalisation,21-25,TRUE,TRUE,18-25
+nnWQZQCQQ,1,nnWQZQCQQ-1,FLUID (KNEE),88,female,ward,competent,NA,NA,NA,confirm non-infectious cause,confirms non-infectious cause,Joint Fluid,NA,Rationalisation,86-90,TRUE,TRUE,80-89
+nnWXPYMWX,1,nnWXPYMWX-1,FLUID (KNEE),68,female,ward,competent,NA,NA,NA,other,no change,Joint Fluid,NA,Unclear,66-70,FALSE,FALSE,50-69
+nnHKHXKXH,1,nnHKHXKXH-1,FLUID (KNEE EFFUSION),64,male,ward,competent,NA,NA,NA,NA,no change,Joint Fluid,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnHHHQXKP,1,nnHHHQXKP-1,FLUID (JOINT),81,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Joint Fluid,NA,Unclear,81-85,FALSE,FALSE,80-89
+nnHHYZCYH,1,nnHHYZCYH-1,FLUID (JOINT),41,female,ward,competent,NA,NA,NA,unable to grow,start Abx therapy,Joint Fluid,NA,Escalation,41-45,TRUE,FALSE,35-49
+nnHXWXWMW,1,nnHXWXWMW-1,FLUID (JOINT),71,male,ward,competent,NA,NA,NA,sample taken while on Abx,change of Abx therapy,Joint Fluid,NA,Escalation,71-75,TRUE,FALSE,70-79
+nnZCCZKQH,1,nnZCCZKQH-1,FLUID (GROIN PUS),62,male,ITU,competent,NA,NA,NA,sample taken while on Abx,NA,Pus/Abscess,NA,Unclear,61-65,FALSE,FALSE,50-69
+nnHXKQXZC,1,nnHXKQXZC-1,FLUID (ELBOW),89,male,ward,competent,NA,NA,NA,unable to grow,change of Abx therapy,Fluid (Other),NA,Escalation,86-90,TRUE,FALSE,80-89
+nnHCQKZCX,1,nnHCQKZCX-1,FLUID (DRAIN LEG),62,male,ward,immunosuppressed,Fusobacterium necrophorum,Amplicon Sorter,pathogen,sample taken while on Abx,confirms treatment choice,Fluid (Other),Fusobacterium,Rationalisation,61-65,TRUE,TRUE,50-69
+ddLLZHPXP,1,ddLLZHPXP-1,FLUID (CSF),69,female,ward,competent,Acinetobacter sp.,Amplicon Sorter,contaminant,unable to grow,confirms treatment choice,CSF,Acinetobacter,Rationalisation,66-70,TRUE,TRUE,50-69
+ddLKXXQHKP,1,ddLKXXQHKP-1,FLUID (CSF),54,female,ward,competent,Enterococcus sp.,Amplicon Sorter,pathogen,sample taken while on Abx,confirms treatment choice,CSF,Enterococcus,Rationalisation,51-55,TRUE,TRUE,50-69
+ddLKXMYWPY,1,ddLKXMYWPY-1,FLUID (CSF),45,male,ITU,NA,Haemophilus sp.,Kraken,NA,NA,NA,CSF,Haemophilus,Unclear,41-45,FALSE,FALSE,35-49
+nnYPZMHKY,1,nnYPZMHKY-1,FLUID (CSF),60,male,ward,competent,Moraxella sp.,Kraken,pathogen,sample taken while on Abx,confirms treatment choice,CSF,Moraxella,Rationalisation,56-60,TRUE,TRUE,50-69
+aaXCCKHPH,1,aaXCCKHPH-1,FLUID (CSF),0,male,ITU,competent,NA,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,00-04,TRUE,TRUE,00-04
+HZPYZHX,1,HZPYZHX-1,FLUID (CSF),0,female,NA,NA,NA,NA,NA,NA,confirms treatment choice,CSF,NA,Rationalisation,00-04,TRUE,TRUE,00-04
+nnHXPPYCP,1,nnHXPPYCP-1,FLUID (CSF),37,male,ward,competent,NA,NA,NA,sample taken while on Abx,confirms treatment choice,CSF,NA,Rationalisation,36-40,TRUE,TRUE,35-49
+nnHYCPZQZ,1,nnHYCPZQZ-1,FLUID (CSF),77,male,ward,immunosuppressed,NA,NA,NA,confirm non-infectious cause,stop Abx,CSF,NA,Rationalisation,76-90,TRUE,TRUE,70-79
+nnHZZMPCY,1,nnHZZMPCY-1,FLUID (CSF),26,female,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,25-30,TRUE,TRUE,26-34
+nnWKMPCCX,1,nnWKMPCCX-1,FLUID (CSF),38,male,ITU,competent,NA,NA,NA,sample taken while on Abx,stop Abx,CSF,NA,Rationalisation,36-40,TRUE,TRUE,35-49
+nnWKMPCCX,2,nnWKMPCCX-2,FLUID (CSF),38,male,ITU,competent,NA,NA,NA,sample taken while on Abx,stop Abx,CSF,NA,Rationalisation,36-40,TRUE,TRUE,35-49
+nnWXKZXHW,1,nnWXKZXHW-1,FLUID (CSF),50,male,ITU,NA,NA,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,46-50,TRUE,TRUE,50-69
+nnYCHYMYC,1,nnYCHYMYC-1,FLUID (CSF),79,female,ward,competent,NA,NA,NA,sample taken while on Abx,no change,CSF,NA,Unclear,76-90,FALSE,FALSE,70-79
+nnYWMYWPZ,1,nnYWMYWPZ-1,FLUID (CSF),80,male,ward,competent,NA,NA,NA,sample taken while on Abx,confirms treatment choice,CSF,NA,Rationalisation,76-90,TRUE,TRUE,80-89
+nnZCXZQHK,1,nnZCXZQHK-1,FLUID (CSF),71,male,ward,competent,NA,NA,NA,sample taken while on Abx,stop Abx,CSF,NA,Rationalisation,71-75,TRUE,TRUE,70-79
+WXCCPPXX/QWX YCC WHHM,1,WXCCPPXX/QWX YCC WHHM-1,FLUID (CSF),0,male,ward,NA,NA,NA,NA,TAT,stop Abx,CSF,NA,Rationalisation,00-04,TRUE,TRUE,00-04
+ddLCWYMYHX,1,ddLCWYMYHX-1,FLUID (CSF),26,female,ward,competent,Staphylococcus aureus,Amplicon Sorter,pathogen,other,confirms treatment choice,CSF,Staphylococcus,Rationalisation,25-30,TRUE,TRUE,26-34
+nnYZYPQYP,3,nnYZYPQYP-3,FLUID (CSF),71,female,ward,immunosuppressed,Streptococcus sp.,Kraken,pathogen,sample taken while on Abx,change of Abx therapy,CSF,Streptococcus,Escalation,71-75,TRUE,FALSE,70-79
+nnHWWPMZW,1,nnHWWPMZW-1,FLUID (CSF),66,female,ITU,competent,Unable to amplify,NA,NA,sample taken while on Abx,no change,CSF,NA,Unclear,66-70,FALSE,FALSE,50-69
+nnZQQKXHP,1,nnZQQKXHP-1,FLUID (CSF),59,female,ITU,immunosuppressed,Unable to amplify,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,56-60,TRUE,TRUE,50-69
+aaKQCQZZQ,1,aaKQCQZZQ-1,FLUID (CSF),0,female,ITU,competent,NA,NA,NA,sample taken while on Abx,no change,CSF,NA,Unclear,00-04,FALSE,FALSE,00-04
+ddLCMZHMPZ,1,ddLCMZHMPZ-1,FLUID (CSF),59,male,ward,competent,NA,NA,NA,sample taken while on Abx,NA,CSF,NA,Unclear,56-60,FALSE,FALSE,50-69
+ddLCXXPCHW ,1,ddLCXXPCHW -1,FLUID (CSF),38,male,ITU,competent,NA,NA,NA,sample taken while on Abx,stop Abx,CSF,NA,Rationalisation,36-40,TRUE,TRUE,35-49
+ddLKXHHWZX,1,ddLKXHHWZX-1,FLUID (CSF),45,female,outpatient clinic,competent,NA,NA,NA,other,no change,CSF,NA,Unclear,41-45,FALSE,FALSE,35-49
+ddLKXMCKHQ,1,ddLKXMCKHQ-1,FLUID (CSF),65,female,ward,NA,NA,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,61-65,TRUE,TRUE,50-69
+ddLKXMCWYM,1,ddLKXMCWYM-1,FLUID (CSF),20,female,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,15-20,TRUE,TRUE,18-25
+ddLKXMKZXZ,1,ddLKXMKZXZ-1,FLUID (CSF),61,female,ward,NA,NA,NA,NA,sample taken while on Abx,confirms treatment choice,CSF,NA,Rationalisation,61-65,TRUE,TRUE,50-69
+ddLKXMXHZM,1,ddLKXMXHZM-1,FLUID (CSF),17,male,ward,NA,NA,NA,NA,sample taken while on Abx,stop Abx,CSF,NA,Rationalisation,15-20,TRUE,TRUE,12-17
+ddLKXPQMXK,1,ddLKXPQMXK-1,FLUID (CSF),68,male,outpatient clinic,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+ddLKXPWKPM,1,ddLKXPWKPM-1,FLUID (CSF),66,male,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,66-70,TRUE,TRUE,50-69
+ddLKXPXKWW,1,ddLKXPXKWW-1,FLUID (CSF),22,male,outpatient clinic,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,21-25,TRUE,TRUE,18-25
+ddLKXPXPPH,1,ddLKXPXPPH-1,FLUID (CSF),56,male,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,56-60,TRUE,TRUE,50-69
+ddLKXQPMHM,1,ddLKXQPMHM-1,FLUID (CSF),72,female,ward,competent,NA,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,71-75,TRUE,TRUE,70-79
+ddLKXQPMZP,1,ddLKXQPMZP-1,FLUID (CSF),42,male,outpatient clinic,competent,NA,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+ddLKXQPMZP,2,ddLKXQPMZP-2,FLUID (CSF),42,male,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+ddLKXQPMZP,3,ddLKXQPMZP-3,FLUID (CSF),42,male,ward,competent,NA,NA,NA,unable to grow,NA,CSF,NA,Unclear,41-45,FALSE,FALSE,35-49
+ddLKXQZZZK,1,ddLKXQZZZK-1,FLUID (CSF),76,male,outpatient clinic,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,76-90,TRUE,TRUE,70-79
+ddLLZZPCP,1,ddLLZZPCP-1,FLUID (CSF),56,male,ward,competent,NA,NA,NA,unable to grow,no change,CSF,NA,Unclear,56-60,FALSE,FALSE,50-69
+nnHQKMYMK,1,nnHQKMYMK-1,FLUID (CSF),79,female,ward,competent,NA,NA,NA,sample taken while on Abx,no change,CSF,NA,Unclear,76-90,FALSE,FALSE,70-79
+nnHWKYZWP,1,nnHWKYZWP-1,FLUID (CSF),29,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,CSF,NA,Unclear,25-30,FALSE,FALSE,26-34
+nnWQHCPWC,1,nnWQHCPWC-1,FLUID (CSF),76,female,ward,competent,NA,NA,NA,unable to grow,no change,CSF,NA,Unclear,76-90,FALSE,FALSE,70-79
+nnYPHXCMC,1,nnYPHXCMC-1,FLUID (CSF),58,female,ward,competent,NA,NA,NA,sample taken while on Abx,confirms treatment choice,CSF,NA,Rationalisation,56-60,TRUE,TRUE,50-69
+nnYPKHHQH,1,nnYPKHHQH-1,FLUID (CSF),75,male,ward,competent,NA,NA,NA,unable to grow,no change,CSF,NA,Unclear,71-75,FALSE,FALSE,70-79
+nnYQMPZKY,1,nnYQMPZKY-1,FLUID (CSF),37,female,ward,immunosuppressed,NA,NA,NA,sample taken while on Abx,stop Abx,CSF,NA,Rationalisation,36-40,TRUE,TRUE,35-49
+nnYYPPYQQ,1,nnYYPPYQQ-1,FLUID (CSF),59,male,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,CSF,NA,Rationalisation,56-60,TRUE,TRUE,50-69
+nnYZKCCWP,1,nnYZKCCWP-1,FLUID (CSF),27,female,ward,competent,NA,NA,NA,confirm non-infectious cause,confirms treatment choice,CSF,NA,Rationalisation,25-30,TRUE,TRUE,26-34
+nnZQXMMPX,1,nnZQXMMPX-1,FLUID (CSF),58,female,ward,immunosuppressed,NA,NA,NA,confirm non-infectious cause,stop Abx,CSF,NA,Rationalisation,56-60,TRUE,TRUE,50-69
+nnZQXYKYH,1,nnZQXYKYH-1,FLUID (CSF),83,male,ward,competent,NA,NA,NA,unable to grow,stop Abx,CSF,NA,Rationalisation,81-85,TRUE,TRUE,80-89
+nnZYMQKHM,1,nnZYMQKHM-1,FLUID (CSF),66,female,ITU,immunosuppressed,NA,NA,NA,unable to grow,no change,CSF,NA,Unclear,66-70,FALSE,FALSE,50-69
+nnZQWHKXY,1,nnZQWHKXY-1,FLUID (BRONCHOALVEOLAR LAVAGE),42,female,ward,immunosuppressed,Pseudomonas sp.,Kraken,NA,NA,NA,Fluid (Other),Pseudomonas,Unclear,41-45,FALSE,FALSE,35-49
+nnZCCMQXY,1,nnZCCMQXY-1,FLUID (BREAST ASPIRATION),39,female,outpatient clinic,competent,NA,NA,NA,sample taken while on Abx,stop Abx,Fluid (Other),NA,Rationalisation,36-40,TRUE,TRUE,35-49
+nnZQWKXCY,1,nnZQWKXCY-1,FLUID (BILOMA BILE),82,male,ward,immunosuppressed,Streptococcus sp.,Kraken,pathogen,unable to grow,change of Abx therapy,Fluid (Other),Streptococcus,Escalation,81-85,TRUE,FALSE,80-89
+nnHWPYMMH,1,nnHWPYMMH-1,FLUID (ASCITIC),69,female,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,Fluid (Other),NA,Rationalisation,66-70,TRUE,TRUE,50-69
+nnYPWPPHK,1,nnYPWPPHK-1,FLUID (ASCITIC),47,male,ward,competent,NA,NA,NA,unable to grow,no change,Fluid (Other),NA,Unclear,46-50,FALSE,FALSE,35-49
+nnHYYYKHQ,1,nnHYYYKHQ-1,FLUID (AQUEOUS),62,female,outpatient clinic,competent,Acinetobacter sp.,Amplicon Sorter,NA,NA,NA,Fluid (Other),Acinetobacter,Unclear,61-65,FALSE,FALSE,50-69
+nnHWQYXCZ,2,nnHWQYXCZ-2,FLUID (AQUEOUS),82,female,NA,NA,NA,NA,NA,NA,NA,Fluid (Other),NA,Unclear,81-85,FALSE,FALSE,80-89
+nnHZXKPHZ,1,nnHZXKPHZ-1,FLUID (AQUEOUS),61,female,ward,competent,NA,NA,NA,other,no change,Fluid (Other),NA,Unclear,61-65,FALSE,FALSE,50-69
+nnWXYCXWP,1,nnWXYCXWP-1,FLUID (AQUEOUS),86,male,ward,competent,NA,NA,NA,sample taken while on Abx,no change,Fluid (Other),NA,Unclear,86-90,FALSE,FALSE,80-89
+nnZZCWYZW,1,nnZZCWYZW-1,FLUID (AQUEOUS),63,male,outpatient clinic,competent,NA,NA,NA,TAT,confirms treatment choice,Fluid (Other),NA,Rationalisation,61-65,TRUE,TRUE,50-69
+nnHHCXMQW,1,nnHHCXMQW-1,FLUID (AQUEOUS),68,female,outpatient clinic,competent,NA,NA,NA,other,confirms treatment choice,Fluid (Other),NA,Rationalisation,66-70,TRUE,TRUE,50-69
+nnHYHZXCK,1,nnHYHZXCK-1,FLUID (ANKLE ASPIRATE),29,female,ward,competent,NA,NA,NA,sample taken while on Abx,stop Abx,Joint Fluid,NA,Rationalisation,25-30,TRUE,TRUE,26-34
+nnHYHZXCK,2,nnHYHZXCK-2,FLUID (ANKLE ASPIRATE),29,female,NA,NA,NA,NA,NA,sample taken while on Abx,stop Abx,Joint Fluid,NA,Rationalisation,25-30,TRUE,TRUE,26-34
+nnWQYMCCX ,2,nnWQYMCCX -2,EYE SWAB,70,female,NA,NA,NA,NA,NA,NA,NA,Swab,NA,Unclear,66-70,FALSE,FALSE,70-79
+rrXCZHHZQ,1,rrXCZHHZQ-1,CSF,0,male,ITU,competent,Streptococcus intermedius,Amplicon Sorter,contaminant,sample taken while on Abx,no change,CSF,Streptococcus,Unclear,00-04,FALSE,FALSE,00-04
+rrKPZQXPP,1,rrKPZQXPP-1,CSF,7,male,ITU,competent,NA,NA,NA,expected fastidious organism,stop Abx,CSF,NA,Rationalisation,05-10,TRUE,TRUE,05-11
+rrXCZZHPY,1,rrXCZZHPY-1,CSF,3,male,ITU,competent,NA,NA,NA,sample taken while on Abx,confirms non-infectious cause,CSF,NA,Rationalisation,00-04,TRUE,TRUE,00-04
+nnHYWKHWY,1,nnHYWKHWY-1,CORNEAL IMPRESSION MEMBRANE,56,male,ward,competent,NA,NA,NA,sample taken while on Abx,NA,Swab,NA,Unclear,56-60,FALSE,FALSE,50-69
+nnWQYMCCX ,1,nnWQYMCCX -1,CORNEAL IMPRESSION MEMBRANE,70,female,outpatient clinic,competent,NA,NA,NA,sample taken while on Abx,NA,Swab,NA,Unclear,66-70,FALSE,FALSE,70-79
+nnZQHYHMZ,1,nnZQHYHMZ-1,CORNEAL IMPRESSION MEMBRANE,51,female,outpatient clinic,competent,NA,NA,NA,TAT,confirms treatment choice,Swab,NA,Rationalisation,51-55,TRUE,TRUE,50-69
+bbXWWWPX,1,bbXWWWPX-1,BRONCHIAL LAVAGE,55,female,ITU,competent,Bacteroides spp.,Amplicon Sorter,contaminant,unable to grow,no change,Respiratory,Bacteroides,Unclear,51-55,FALSE,FALSE,50-69
+ssCXXKKMHZ,2,ssCXXKKMHZ-2,BLOOD CULTURE (ANAEROBIC),43,female,NA,NA,NA,NA,NA,other,stop Abx,Blood Culture,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+ssCXXKKMHZ,1,ssCXXKKMHZ-1,BLOOD CULTURE (AEROBIC),24,female,ward,immunosuppressed,NA,NA,NA,other,confirms treatment choice,Blood Culture,NA,Rationalisation,21-25,TRUE,TRUE,18-25
+nnZQHCMMY,1,nnZQHCMMY-1,BLOOD CULTURE,59,female,ward,competent,Akkermansia muciniphila,Amplicon Sorter,pathogen,unable to ID,change of Abx therapy,Blood Culture,Akkermansia,Escalation,56-60,TRUE,FALSE,50-69
+nnYMKZCZW,1,nnYMKZCZW-1,BLOOD CULTURE,71,female,ward,immunosuppressed,Campylobacter upsaliensis,Amplicon Sorter,pathogen,unable to ID,confirms treatment choice,Blood Culture,Campylobacter,Rationalisation,71-75,TRUE,TRUE,70-79
+nnWYQMKQZ,1,nnWYQMKQZ-1,BLOOD CULTURE,60,male,ward,competent,Capnocytophaga felis,Amplicon Sorter,pathogen,unable to grow,confirms treatment choice,Blood Culture,Capnocytophaga,Rationalisation,56-60,TRUE,TRUE,50-69
+nnHKQHQYK,1,nnHKQHQYK-1,BLOOD CULTURE,33,male,ward,immunosuppressed,Hazenella coriacea,Amplicon Sorter,contaminant,unable to ID,stop Abx,Blood Culture,Hazenella,Rationalisation,31-35,TRUE,TRUE,26-34
+nnWQMPPCH,1,nnWQMPPCH-1,BLOOD CULTURE,71,female,ITU,competent,NA,NA,NA,unable to grow,no change,Blood Culture,NA,Unclear,71-75,FALSE,FALSE,70-79
+nnZWCWCCW,1,nnZWCWCCW-1,BLOOD CULTURE,50,female,ITU,competent,NA,NA,NA,other,no change,Blood Culture,NA,Unclear,46-50,FALSE,FALSE,50-69
+ssCXKCQZHQ/nnZZXHYCP,1,ssCXKCQZHQ/nnZZXHYCP-1,BLOOD CULTURE,43,female,NA,NA,NA,NA,NA,unable to grow,stop Abx,Blood Culture,NA,Rationalisation,41-45,TRUE,TRUE,35-49
+nnYZYPQYP,2,nnYZYPQYP-2,BLOOD CULTURE,71,female,ward,immunosuppressed,Streptococcus pneumoniae,Amplicon Sorter,pathogen,sample taken while on Abx,change of Abx therapy,Blood Culture,Streptococcus,Escalation,71-75,TRUE,FALSE,70-79
+nnWCWMKXX,1,nnWCWMKXX-1,BLOOD CULTURE,48,male,ward,competent,NA,NA,NA,unable to ID,no change,Blood Culture,NA,Unclear,46-50,FALSE,FALSE,35-49
+nnYKCXZZM,1,nnYKCXZZM-1,BLOOD CULTURE,79,female,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,Blood Culture,NA,Rationalisation,76-90,TRUE,TRUE,70-79
+nnYKCXZZM,2,nnYKCXZZM-2,BLOOD CULTURE,79,female,ward,competent,NA,NA,NA,unable to grow,confirms treatment choice,Blood Culture,NA,Rationalisation,76-90,TRUE,TRUE,70-79
+nnYZYPMHC,1,nnYZYPMHC-1,BLOOD CULTURE,62,female,ward,competent,NA,NA,NA,sample taken while on Abx,stop Abx,Blood Culture,NA,Rationalisation,61-65,TRUE,TRUE,50-69
+nnYZYPQYP,1,nnYZYPQYP-1,BLOOD CULTURE,71,female,ward,immunosuppressed,NA,NA,NA,sample taken while on Abx,change of Abx therapy,Blood Culture,NA,Escalation,71-75,TRUE,FALSE,70-79
