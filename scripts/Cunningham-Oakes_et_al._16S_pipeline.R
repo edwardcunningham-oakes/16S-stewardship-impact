@@ -18,12 +18,12 @@ library(pals)
 
 #----SUPPLEMENTARY FILE 1----
 #----Load original clinical metadata
-Carlisle_et_al_supp_1 <- read.csv2("Carlisle_et_al._Supplementary_File_1.csv", sep = ",")
+Cunningham-Oakes_et_al_supp_1 <- read.csv2("Cunningham-Oakes_et_al._Supplementary_File_1.csv", sep = ",")
 
 
 #----SUPPLEMENTARY FILE 2----
 #----Clean whitespace and fix known typos
-Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_1 %>%
+Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_1 %>%
   mutate(
     sample_type = str_trim(sample_type),
     sample_type = str_replace_all(sample_type, regex("TISSE", ignore_case = TRUE), "TISSUE"),
@@ -34,7 +34,7 @@ Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_1 %>%
   )
 
 # Group sample types into broader categories
-Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>%
+Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
   mutate(
     sample_group = case_when(
       str_detect(sample_type, regex("CSF", ignore_case = TRUE)) ~ "CSF",
@@ -52,7 +52,7 @@ Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>%
   )
 
 #Sample genus count
-Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>%
+Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
   mutate(
     genus = case_when(
       str_detect(organism..one.per.line., regex("Acinetobacter", ignore_case = TRUE)) ~ "Acinetobacter",
@@ -105,12 +105,12 @@ classify_impact <- function(outcome) {
 }
 
 #Apply classifier
-Carlisle_et_al_supp_2$impact_category <- sapply(Carlisle_et_al_supp_2$outcome_post_16S, classify_impact)
+Cunningham-Oakes_et_al_supp_2$impact_category <- sapply(Cunningham-Oakes_et_al_supp_2$outcome_post_16S, classify_impact)
 
 #Converting age to numeric and create age groups
-Carlisle_et_al_supp_2$patient_age <- as.numeric(Carlisle_et_al_supp_2$patient_age)
+Cunningham-Oakes_et_al_supp_2$patient_age <- as.numeric(Cunningham-Oakes_et_al_supp_2$patient_age)
 
-Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>%
+Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
   mutate(
     age_group = case_when(
       is.na(patient_age)        ~ NA,
@@ -140,7 +140,7 @@ Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>%
 
 
 #Generate inputs for downstream tables and analysis----
-sex_data <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+sex_data <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   filter(!is.na(age_group)) %>%
   group_by(age_group) %>%
   summarise(
@@ -153,7 +153,7 @@ sex_data <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>%
     f_perc = round(f / total * 100, 1)
   )
 
-Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   mutate(
     age_group_nhs = case_when(
       is.na(patient_age)        ~ NA,
@@ -171,9 +171,9 @@ Carlisle_et_al_supp_2 <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all
     rationalisation = impact_category == "Rationalisation"
   )
 
-write_csv(Carlisle_et_al_supp_2, "Carlisle_et_al._Supplementary_File_2.csv")
+write_csv(Cunningham-Oakes_et_al_supp_2, "Cunningham-Oakes_et_al._Supplementary_File_2.csv")
 
-Histo_data <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Histo_data <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   filter(!is.na(age_group_nhs)) %>%
   group_by(age_group_nhs) %>%
   summarise(
@@ -186,14 +186,14 @@ Histo_data <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>
     f_perc = round(f / total * 100, 1)
   )
 
-genus <- Carlisle_et_al_supp_2 %>%
+genus <- Cunningham-Oakes_et_al_supp_2 %>%
   filter(!is.na(genus)) %>%           
   count(genus, name = "n") %>% 
   mutate(percentage = round(n / sum(n) * 100, 1)) %>% 
   arrange(desc(percentage))
       
 
-genus_by_location <- Carlisle_et_al_supp_2 %>%
+genus_by_location <- Cunningham-Oakes_et_al_supp_2 %>%
   filter(!is.na(genus), !is.na(Patient.location)) %>%           
   group_by(Patient.location, genus) %>%                         
   summarise(n = n(), .groups = "drop") %>%                  
@@ -203,7 +203,7 @@ genus_by_location <- Carlisle_et_al_supp_2 %>%
     percentage = round(n / total * 100, 1)                      
   )
 
-genus_by_sample <- Carlisle_et_al_supp_2 %>%
+genus_by_sample <- Cunningham-Oakes_et_al_supp_2 %>%
   filter(!is.na(genus), !is.na(sample_group)) %>%           
   group_by(sample_group, genus) %>%                         
   summarise(n = n(), .groups = "drop") %>%                  
@@ -214,7 +214,7 @@ genus_by_sample <- Carlisle_et_al_supp_2 %>%
   )
       
 # Group by Immunostatus, age_group, sample_type and summarise
-Carlisle_et_al_supp_2_summary <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Cunningham-Oakes_et_al_supp_2_summary <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   group_by(Immunostatus, patient_age, sample_type) %>%
   summarise(
     n = n(),
@@ -223,14 +223,14 @@ Carlisle_et_al_supp_2_summary <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .
     .groups = "drop"
   )
 
-Impact <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Impact <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   count(outcome_post_16S, name = "n") %>%
   mutate(
     percentage = round(100 * n / sum(n), 1),
     label = paste0(outcome_post_16S, " (", percentage, "%)")
   )
 
-Request <- Carlisle_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Request <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   count(reason.for.request, name = "n") %>%
   mutate(
     percentage = round(100 * n / sum(n), 1),
@@ -276,7 +276,7 @@ palette <- palette[1:n_categories]
         panel.background = element_rect(fill = "white", colour = "black", linewidth = 1.5),
         panel.border = element_rect(fill = NA, colour = "black", linewidth = 1.5))
   
- location_summary <- Carlisle_et_al_supp_2 %>%
+ location_summary <- Cunningham-Oakes_et_al_supp_2 %>%
   filter(!is.na(Patient.location)) %>%
   count(Patient.location) %>%
   mutate(percent = round(100 * n / sum(n), 1),
@@ -395,7 +395,7 @@ dev.off()
 
 #---TABLES---
 #---TABLE 1----
-Table_1_raw <- Carlisle_et_al_supp_2 %>%
+Table_1_raw <- Cunningham-Oakes_et_al_supp_2 %>%
   count(sample_group, name = "n") %>%
   mutate(
     percentage = round(100 * n / sum(n), 1))
@@ -425,21 +425,21 @@ Table_4 <- gt(sex_data) %>%
 
 
 #Make new stewardship category for Table 5
-Carlisle_et_al_supp_2$stewardship <- ifelse(Carlisle_et_al_supp_2$impact_category %in% c("Escalation", "Rationalisation"), "Yes", "No")
+Cunningham-Oakes_et_al_supp_2$stewardship <- ifelse(Cunningham-Oakes_et_al_supp_2$impact_category %in% c("Escalation", "Rationalisation"), "Yes", "No")
 
 #----TABLE 5----
-immune_table <- table(Carlisle_et_al_supp_2$stewardship, Carlisle_et_al_supp_2$Immunostatus)
+immune_table <- table(Cunningham-Oakes_et_al_supp_2$stewardship, Cunningham-Oakes_et_al_supp_2$Immunostatus)
 immune_stats <- fisher.test(immune_table)
 
-sex_table <- table(drop_na(Carlisle_et_al_supp_2,sex)$stewardship, drop_na(Carlisle_et_al_supp_2,sex)$sex)
+sex_table <- table(drop_na(Cunningham-Oakes_et_al_supp_2,sex)$stewardship, drop_na(Cunningham-Oakes_et_al_supp_2,sex)$sex)
 sex_stats <- fisher.test(sex_table)
 
-age_table <- table(drop_na(Carlisle_et_al_supp_2,age_group)$stewardship, drop_na(Carlisle_et_al_supp_2,age_group)$age_group)
+age_table <- table(drop_na(Cunningham-Oakes_et_al_supp_2,age_group)$stewardship, drop_na(Cunningham-Oakes_et_al_supp_2,age_group)$age_group)
 age_stats <- fisher.test(age_table, simulate.p.value = TRUE, B=10000)
 
 
 #----SUPPLEMENTARY FILE 3----
-write_csv(genus, "Carlisle_et_al._Supplementary_File_3.csv")
+write_csv(genus, "Cunningham-Oakes_et_al._Supplementary_File_3.csv")
 
 
 
