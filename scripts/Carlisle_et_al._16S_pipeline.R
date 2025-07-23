@@ -296,9 +296,8 @@ palette <- palette[1:n_categories]
     plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
     panel.grid = element_blank()
   )
-  
-
-Figure_1 <- (Figure_1A + inset_element(Figure_1B, left = 0.6, bottom = 0.1, right = 1, top = 0.45, align_to = "full")) + Figure_1C +
+ 
+Figure_1 <- (Figure_1A / Figure_1B | Figure_1C) +
   plot_annotation(tag_levels = 'A')
   
 # === Export as SVG ===
