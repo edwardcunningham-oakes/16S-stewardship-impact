@@ -15,22 +15,26 @@ The code (implemented in R) includes a complete workflow, from metadata wranglin
 
 ```r
 # From R console
-source("scripts/Carlisle_et_al_16S_pipeline.R")
+source("scripts/Cunningham-Oakes_et_al._16S_pipeline.R")
 
 📚 R Packages
 
 The following R packages must be installed:
 
 install.packages(c(
-  "dplyr", 
-  "tidyverse", 
-  "ggplot2", 
-  "gtable", 
-  "ggridges", 
-  "viridis", 
-  "svglite",
+  "dplyr",
+  "tidyverse",
+  "ggplot2",
   "patchwork",
-  "pals"
+  "svglite",
+  "gtable",
+  "ggridges",
+  "viridis",
+  "hrbrthemes",
+  "pals",
+  "nnet",
+  "broom",
+  "gtExtras"
 ))
 
 remotes::install_github("vankesteren/firatheme")
