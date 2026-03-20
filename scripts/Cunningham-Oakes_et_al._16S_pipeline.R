@@ -1,11 +1,10 @@
 #Set working directory
-setwd("~/Documents/16S manuscript September 2024/Resubmission - eBiomedicine/")
+#setwd("[INSERT_WORKING_DIRECTORY_HERE]")
 
 #Load libraries
 library(dplyr)
 library(tidyverse)
 library(ggplot2)
-library(dplyr)
 library(firatheme)
 library(patchwork)
 library(svglite)
@@ -15,15 +14,17 @@ library(ggridges)
 library(viridis)
 library(hrbrthemes)
 library(pals)
+library(nnet)
+library(broom)
 
 #----SUPPLEMENTARY FILE 1----
 #----Load original clinical metadata
-Cunningham-Oakes_et_al_supp_1 <- read.csv2("Cunningham-Oakes_et_al._Supplementary_File_1.csv", sep = ",")
+Cunningham_Oakes_et_al_supp_1 <- read.csv("../Submission folder/Cunningham-Oakes_Carlisle_et_al._Supplementary_File_1.csv", sep = ",")
 
 
 #----SUPPLEMENTARY FILE 2----
 #----Clean whitespace and fix known typos
-Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_1 %>%
+Cunningham_Oakes_et_al_supp_2 <- Cunningham_Oakes_et_al_supp_1 %>%
   mutate(
     sample_type = str_trim(sample_type),
     sample_type = str_replace_all(sample_type, regex("TISSE", ignore_case = TRUE), "TISSUE"),
@@ -34,7 +35,7 @@ Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_1 %>%
   )
 
 # Group sample types into broader categories
-Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
+Cunningham_Oakes_et_al_supp_2 <- Cunningham_Oakes_et_al_supp_2 %>%
   mutate(
     sample_group = case_when(
       str_detect(sample_type, regex("CSF", ignore_case = TRUE)) ~ "CSF",
@@ -52,7 +53,7 @@ Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
   )
 
 #Sample genus count
-Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
+Cunningham_Oakes_et_al_supp_2 <- Cunningham_Oakes_et_al_supp_2 %>%
   mutate(
     genus = case_when(
       str_detect(organism..one.per.line., regex("Acinetobacter", ignore_case = TRUE)) ~ "Acinetobacter",
@@ -105,33 +106,24 @@ classify_impact <- function(outcome) {
 }
 
 #Apply classifier
-Cunningham-Oakes_et_al_supp_2$impact_category <- sapply(Cunningham-Oakes_et_al_supp_2$outcome_post_16S, classify_impact)
+Cunningham_Oakes_et_al_supp_2$impact_category <- sapply(Cunningham_Oakes_et_al_supp_2$outcome_post_16S, classify_impact)
 
 #Converting age to numeric and create age groups
-Cunningham-Oakes_et_al_supp_2$patient_age <- as.numeric(Cunningham-Oakes_et_al_supp_2$patient_age)
+Cunningham_Oakes_et_al_supp_2$patient_age <- as.numeric(Cunningham_Oakes_et_al_supp_2$patient_age)
 
-Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
+Cunningham_Oakes_et_al_supp_2 <- Cunningham_Oakes_et_al_supp_2 %>%
   mutate(
     age_group = case_when(
       is.na(patient_age)        ~ NA,
-      patient_age >= 0  & patient_age <= 4   ~ "00-04",
-      patient_age >= 5  & patient_age <= 10  ~ "05-10",
-      patient_age >= 11  & patient_age <= 15  ~ "11-15",
-      patient_age >= 16  & patient_age <= 20  ~ "15-20",
-      patient_age >= 21  & patient_age <= 25  ~ "21-25",
-      patient_age >= 26  & patient_age <= 30  ~ "25-30",
-      patient_age >= 31  & patient_age <= 35  ~ "31-35",
-      patient_age >= 36  & patient_age <= 40  ~ "36-40",
-      patient_age >= 41  & patient_age <= 45  ~ "41-45",
-      patient_age >= 46  & patient_age <= 50  ~ "46-50",
-      patient_age >= 51  & patient_age <= 55  ~ "51-55",
-      patient_age >= 56  & patient_age <= 60  ~ "56-60",
-      patient_age >= 61  & patient_age <= 65  ~ "61-65",
-      patient_age >= 66  & patient_age <= 70  ~ "66-70",
-      patient_age >= 71  & patient_age <= 75  ~ "71-75",
-      patient_age >= 76  & patient_age <= 80  ~ "76-90",
-      patient_age >= 81  & patient_age <= 85  ~ "81-85",
-      patient_age >= 86  & patient_age <= 90  ~ "86-90",
+      patient_age >= 0  & patient_age <= 4 ~ "00-04",
+      patient_age >= 5  & patient_age <= 11 ~ "05-11",
+      patient_age >= 12  & patient_age <= 17 ~ "12-17",
+      patient_age >= 18  & patient_age <= 25 ~ "18-25",
+      patient_age >= 26  & patient_age <= 34 ~ "26-34",
+      patient_age >= 35  & patient_age <= 49 ~ "35-49",
+      patient_age >= 50  & patient_age <= 69 ~ "50-69",
+      patient_age >= 70  & patient_age <= 79 ~ "70-79",
+      patient_age >= 80  & patient_age <= 89 ~ "80-89",
     ),
     actionable = impact_category %in% c("Rationalisation", "Escalation"),
     rationalisation = impact_category == "Rationalisation"
@@ -139,8 +131,8 @@ Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>%
 
 
 
-#Generate inputs for downstream tables and analysis----
-sex_data <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+#Generate inputs for downstream tables and analysis
+sex_data <- Cunningham_Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   filter(!is.na(age_group)) %>%
   group_by(age_group) %>%
   summarise(
@@ -153,7 +145,7 @@ sex_data <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TR
     f_perc = round(f / total * 100, 1)
   )
 
-Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Cunningham_Oakes_et_al_supp_2 <- Cunningham_Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   mutate(
     age_group_nhs = case_when(
       is.na(patient_age)        ~ NA,
@@ -171,9 +163,9 @@ Cunningham-Oakes_et_al_supp_2 <- Cunningham-Oakes_et_al_supp_2 %>% distinct(uniq
     rationalisation = impact_category == "Rationalisation"
   )
 
-write_csv(Cunningham-Oakes_et_al_supp_2, "Cunningham-Oakes_et_al._Supplementary_File_2.csv")
+write_csv(Cunningham_Oakes_et_al_supp_2, "Cunningham-Oakes_et_al._Supplementary_File_2.csv")
 
-Histo_data <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Histo_data <- Cunningham_Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   filter(!is.na(age_group_nhs)) %>%
   group_by(age_group_nhs) %>%
   summarise(
@@ -186,14 +178,14 @@ Histo_data <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = 
     f_perc = round(f / total * 100, 1)
   )
 
-genus <- Cunningham-Oakes_et_al_supp_2 %>%
+genus <- Cunningham_Oakes_et_al_supp_2 %>%
   filter(!is.na(genus)) %>%           
   count(genus, name = "n") %>% 
   mutate(percentage = round(n / sum(n) * 100, 1)) %>% 
   arrange(desc(percentage))
       
 
-genus_by_location <- Cunningham-Oakes_et_al_supp_2 %>%
+genus_by_location <- Cunningham_Oakes_et_al_supp_2 %>%
   filter(!is.na(genus), !is.na(Patient.location)) %>%           
   group_by(Patient.location, genus) %>%                         
   summarise(n = n(), .groups = "drop") %>%                  
@@ -203,7 +195,7 @@ genus_by_location <- Cunningham-Oakes_et_al_supp_2 %>%
     percentage = round(n / total * 100, 1)                      
   )
 
-genus_by_sample <- Cunningham-Oakes_et_al_supp_2 %>%
+genus_by_sample <- Cunningham_Oakes_et_al_supp_2 %>%
   filter(!is.na(genus), !is.na(sample_group)) %>%           
   group_by(sample_group, genus) %>%                         
   summarise(n = n(), .groups = "drop") %>%                  
@@ -213,8 +205,8 @@ genus_by_sample <- Cunningham-Oakes_et_al_supp_2 %>%
     percentage = round(n / total * 100, 1)                      
   )
       
-# Group by Immunostatus, age_group, sample_type and summarise
-Cunningham-Oakes_et_al_supp_2_summary <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+#Group by Immunostatus, age_group, sample_type and summarise
+Cunningham_Oakes_et_al_supp_2_summary <- Cunningham_Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   group_by(Immunostatus, patient_age, sample_type) %>%
   summarise(
     n = n(),
@@ -223,14 +215,14 @@ Cunningham-Oakes_et_al_supp_2_summary <- Cunningham-Oakes_et_al_supp_2 %>% disti
     .groups = "drop"
   )
 
-Impact <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Impact <- Cunningham_Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   count(outcome_post_16S, name = "n") %>%
   mutate(
     percentage = round(100 * n / sum(n), 1),
     label = paste0(outcome_post_16S, " (", percentage, "%)")
   )
 
-Request <- Cunningham-Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
+Request <- Cunningham_Oakes_et_al_supp_2 %>% distinct(unique_id, .keep_all = TRUE) %>% 
   count(reason.for.request, name = "n") %>%
   mutate(
     percentage = round(100 * n / sum(n), 1),
@@ -276,7 +268,7 @@ palette <- palette[1:n_categories]
         panel.background = element_rect(fill = "white", colour = "black", linewidth = 1.5),
         panel.border = element_rect(fill = NA, colour = "black", linewidth = 1.5))
   
- location_summary <- Cunningham-Oakes_et_al_supp_2 %>%
+ location_summary <- Cunningham_Oakes_et_al_supp_2 %>%
   filter(!is.na(Patient.location)) %>%
   count(Patient.location) %>%
   mutate(percent = round(100 * n / sum(n), 1),
@@ -395,7 +387,7 @@ dev.off()
 
 #---TABLES---
 #---TABLE 1----
-Table_1_raw <- Cunningham-Oakes_et_al_supp_2 %>%
+Table_1_raw <- Cunningham_Oakes_et_al_supp_2 %>%
   count(sample_group, name = "n") %>%
   mutate(
     percentage = round(100 * n / sum(n), 1))
@@ -424,22 +416,76 @@ Table_4 <- gt(sex_data) %>%
   tab_header("Table 4: Demographics of patients sampled for 16S")
 
 
-#Make new stewardship category for Table 5
-Cunningham-Oakes_et_al_supp_2$stewardship <- ifelse(Cunningham-Oakes_et_al_supp_2$impact_category %in% c("Escalation", "Rationalisation"), "Yes", "No")
+#Make new stewardship category
+Cunningham_Oakes_et_al_supp_2$stewardship <- ifelse(Cunningham_Oakes_et_al_supp_2$impact_category %in% c("Escalation", "Rationalisation"), "Yes", "No")
 
-#----TABLE 5----
-immune_table <- table(Cunningham-Oakes_et_al_supp_2$stewardship, Cunningham-Oakes_et_al_supp_2$Immunostatus)
-immune_stats <- fisher.test(immune_table)
+#Create patient-level dataset
+# Reduces dataset to one row per patient
+patient_level <- Cunningham_Oakes_et_al_supp_2 %>%
+  distinct(patient_number, .keep_all = TRUE) %>%
+  mutate(
+    stewardship_bin = ifelse(stewardship == "Yes", 1, 0) # Binary outcome (1 = stewardship action, 0 = none)
+  )
 
-sex_table <- table(drop_na(Cunningham-Oakes_et_al_supp_2,sex)$stewardship, drop_na(Cunningham-Oakes_et_al_supp_2,sex)$sex)
-sex_stats <- fisher.test(sex_table)
+#Convert variables to factors and define reference levels
+#Reference category is the baseline for comparison in regression models
+patient_level$Immunostatus <- factor(patient_level$Immunostatus)
+patient_level$Immunostatus <- relevel(patient_level$Immunostatus, ref = "competent")
 
-age_table <- table(drop_na(Cunningham-Oakes_et_al_supp_2,age_group)$stewardship, drop_na(Cunningham-Oakes_et_al_supp_2,age_group)$age_group)
-age_stats <- fisher.test(age_table, simulate.p.value = TRUE, B=10000)
+patient_level$sex <- factor(patient_level$sex)
+patient_level$sex <- relevel(patient_level$sex, ref = "female")
 
+patient_level$impact_category <- factor(patient_level$impact_category)
+patient_level$impact_category <- relevel(patient_level$impact_category, ref = "Unclear")
+
+#---- Logistic regression models ----
+# Fit logistic regression models for binary outcome (stewardship_bin)
+# Coefficients represent log-odds, later converted to odds ratios
+immune_model <- glm(stewardship_bin ~ Immunostatus,
+                    data = drop_na(patient_level, Immunostatus),
+                    family = binomial)
+
+# Convert coefficients to odds ratios with confidence intervals
+immune_or <- exp(cbind(OR = coef(immune_model),
+                       confint(immune_model)))
+
+immune_or <- round(immune_or, 2)
+immune_or
+
+
+sex_model <- glm(stewardship_bin ~ sex,
+                 data = drop_na(patient_level, sex),
+                 family = binomial)
+
+sex_or <- exp(cbind(OR = coef(sex_model),
+                    confint(sex_model)))
+sex_or <- round(sex_or, 2)
+sex_or
+
+
+age_model <- glm(stewardship_bin ~ patient_age,
+                 data = patient_level,
+                 family = binomial)
+
+age_or <- exp(cbind(OR = coef(age_model),
+                       confint(age_model)))
+
+age_or <- round(age_or, 2)
+age_or
+
+#---- Multinomial logistic regression ----
+# Outcome has three categories; "Unclear" used as reference
+# Model estimates relative risk ratios for each category vs reference
+multinomial_immune_model <- multinom(impact_category ~ Immunostatus, data = drop_na(patient_level, Immunostatus), ref = "Unclear")
+multinomial_sex_model <- multinom(impact_category ~ sex, data = drop_na(patient_level, sex), ref = "Unclear")
+multinomial_age_model <- multinom(impact_category ~ patient_age, data = patient_level, ref = "Unclear")
+
+# Convert coefficients to relative risk ratios with confidence intervals
+multinomial_immune_model_summary <- tidy(multinomial_immune_model, exponentiate = TRUE, conf.int = TRUE)
+multinomial_sex_model_summary <- tidy(multinomial_sex_model, exponentiate = TRUE, conf.int = TRUE)
+multinomial_age_model_summary <- tidy(multinomial_age_model, exponentiate = TRUE, conf.int = TRUE)
 
 #----SUPPLEMENTARY FILE 3----
 write_csv(genus, "Cunningham-Oakes_et_al._Supplementary_File_3.csv")
-
 
 
