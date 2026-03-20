@@ -38,7 +38,6 @@ install.packages(c(
 ))
 
 remotes::install_github("vankesteren/firatheme")
-remotes::install_github("jthomasmock/gtExtras")
 
 # hrbrthemes (for extra themes and fonts)
 install.packages("hrbrthemes")
